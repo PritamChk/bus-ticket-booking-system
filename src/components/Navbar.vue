@@ -1,7 +1,11 @@
 <template>
   <nav>
     <div>logo</div>
-    <ul></ul>
+    <ul>
+      <li>
+        <router-link :to="{ name: 'home' }">Home</router-link>
+      </li>
+    </ul>
   </nav>
 </template>
 

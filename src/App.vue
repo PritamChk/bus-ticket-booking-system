@@ -1,13 +1,13 @@
 <template>
-  <div class="w-2/3 h-10 bg-gray-500"></div>
-  <HomeViewVue></HomeViewVue>
+  <NavBar></NavBar>
+  <router-view></router-view>
 </template>
 
 <script>
-import HomeViewVue from "./views/HomeView.vue";
+import NavBar from "./components/Navbar.vue";
 export default {
   components: {
-    HomeViewVue,
+    NavBar,
   },
   data() {
     return {};
