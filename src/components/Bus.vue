@@ -1,10 +1,10 @@
 <template>
   <section
-    class="rounded-lg shadow-md h-9/12 w-3/6 bg-zinc-200 mx-auto my-10 flex flex-col"
+    class="rounded-lg shadow-lg bg-zinc-300 mx-auto my-10 flex flex-col"
   >
     <header class="flex flex-row justify-between items-center h-44">
       <h1
-        class="border-r-2 rounded-xl border-t-2 border-b-2 px-10 py-10 border-gray-800/30 text-2xl"
+        class="border-r-2 rounded-r-xl border-t-2 border-b-2 px-10 py-10 border-gray-800/30 text-2xl"
       >
         Entry
       </h1>
@@ -18,9 +18,9 @@
       <section class="col-span-2 grid grid-cols-2 grid-rows-5">
         <template v-for="Lseat in L1">
           <button
-            class="w-16 h-16 bg-gray-500 mx-2 my-2 rounded-lg col-span-1 row-span-1"
+            class="hover:bg-sky-200 slow text-lg font-medium cursor-pointer w-16 h-16 shadow-md shadow-zinc-600/20 bg-gray-100 mx-2 my-3 rounded-lg col-span-1 row-span-1"
           >
-            {{ Lseat }}
+            L{{ Lseat }}
           </button>
         </template>
       </section>
@@ -31,12 +31,12 @@
           <span>Passage</span>
         </div>
       </div>
-      <section class="col-span-2 grid grid-cols-2 grid-rows-5">
+      <section class="col-span-2 grid grid-cols-2 grid-rows-5 gap-1">
         <template v-for="Rseat in R1">
           <button
-            class="w-16 h-16 bg-gray-500 mx-2 my-2 rounded-lg col-span-1 row-span-1"
+            class="hover:bg-sky-200 slow text-lg font-medium cursor-pointer w-16 h-16 shadow-zinc-600/20 bg-gray-100 shadow-md mx-2 my-3 rounded-lg col-span-1 row-span-1"
           >
-            {{ Rseat }}
+            R{{ Rseat }}
           </button>
         </template>
       </section>
@@ -48,8 +48,8 @@ export default {
   name: "BusView",
   data() {
     return {
-      L1: 10,
-      R1: 10,
+      L1: 12,
+      R1: 12,
     };
   },
 };
