@@ -1,6 +1,8 @@
 <template>
-  <NavBar></NavBar>
-  <router-view></router-view>
+  <div class="h-screen w-full flex flex-col">
+    <NavBar></NavBar>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
